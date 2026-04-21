@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@source "../src";
+
+@theme {
+  /* Default (Light) Mode */
+  --color-primary: #0ea5e9;
+  --color-on-primary: #ffffff;
+  --color-secondary-fixed: #65a30d;
+  --color-on-surface: #0f172a;
+  --color-on-surface-variant: #64748b;
+  --color-background: #f8fafc;
+  --color-surface-container: #ffffff;
+  --color-surface-container-highest: #f1f5f9;
+  --color-surface-container-lowest: #fdfdfd;
+  --color-outline-variant: #e2e8f0;
+
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  /* Dark Mode Overrides */
+  .dark {
+    --color-primary: #3cd7ff;
+    --color-on-primary: #003642;
+    --color-secondary-fixed: #a9f900;
+    --color-on-surface: #fdfcff;
+    --color-on-surface-variant: #bfc8cb;
+    --color-background: #020617;
+    --color-surface-container: #1b1c1e;
+    --color-surface-container-highest: #2e3032;
+    --color-surface-container-lowest: #0c0d0f;
+    --color-outline-variant: #40484b;
+  }
+}
+
+
+/* ── Reset base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@layer utilities {
+  @keyframes scan {
+    from {
+      top: 0;
+    }
+    to {
+      top: 100%;
+    }
+  }
+  .animate-\\[scan_1\\.5s_ease-in-out_infinite_alternate\\] {
+    animation: scan 1.5s ease-in-out infinite alternate;
+  }
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Utility Classes ── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #3cd7ff 0%, #a9f900 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Custom animation for security orbiting dot ── */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
