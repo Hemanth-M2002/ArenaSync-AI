@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/af658bda-be31-4a9f-9afd-9745ef10bcf6
+
 # ArenaSync AI 🏟️🤖
 
 ### Smart Physical Event Experience Platform for Large Sporting Venues
@@ -8,8 +12,8 @@ ArenaSync AI is a web-based intelligent venue experience platform built for the 
 
 ## 🚀 Live Demo
 
-Frontend: `https://arena-sync-client.vercel.app/`
-Backend API: `https://arenasync-server-1.onrender.com`
+* Frontend: `https://arena-sync-client.vercel.app/`
+* Backend : `https://arenasync-server-1.onrender.com`
 
 ## Test Login ID
 Email : test123@gmail.com
@@ -19,6 +23,10 @@ Password : test123
 ## 🎥 Demo Video
 
 To use the access and go through the website, use the details I enter in the video.
+
+
+https://github.com/user-attachments/assets/c04ad519-a65d-4738-9164-198373d24b09
+
 
 
 
