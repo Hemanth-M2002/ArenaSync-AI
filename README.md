@@ -12,12 +12,12 @@ ArenaSync AI is a web-based intelligent venue experience platform built for the 
 
 ## 🚀 Live Demo
 
-* Frontend: `https://arena-sync-client.vercel.app/`
-* Backend : `https://arenasync-server-1.onrender.com`
+* Frontend: https://arena-sync-client.vercel.app/
+* Backend : https://arenasync-server-1.onrender.com
 
 ## Test Login ID
-Email : test123@gmail.com
-Password : test123
+* Email : test123@gmail.com
+* Password : test123
 ---
 
 ## 🎥 Demo Video
