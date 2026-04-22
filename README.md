@@ -104,6 +104,35 @@ For venue managers:
 
 ---
 
+## 🧾 Assumptions Made
+
+Since access to real stadium infrastructure data is limited, the following assumptions were used for the MVP:
+
+- Crowd heatmap uses simulated live crowd data
+- Queue waiting times are dynamically mocked for demo purposes
+- Venue maps are simplified zone-based layouts
+- AI recommendations use available database + Gemini responses
+- Notifications are manually triggered during testing
+- System designed to scale for real integrations later
+
+
+## 🎯 Approach and Logic
+
+ArenaSync AI was designed using a user-first problem-solving approach for large sporting venues.
+
+The system focuses on common attendee pain points such as long queues, navigation confusion, overcrowding, and limited on-site assistance.
+
+### Core Logic Used:
+
+- Analyze crowd levels across venue zones using simulated operational data
+- Recommend least crowded gates and efficient walking routes
+- Estimate queue waiting times dynamically for key service areas
+- Use AI assistant for natural language venue support
+- Provide alerts for congestion and safety guidance
+- Improve attendee movement flow across the stadium
+
+The platform combines structured stadium data, MongoDB data storage, and Google Gemini AI responses to deliver practical venue assistance. The system is designed to support live integrations in future deployments.
+
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -228,11 +257,11 @@ B.Tech Computer Science and Business Systems
 
 ---
 
-## 🏆 Google PromptWars Submission
-
-This project was created for the **Google PromptWars Challenge** under the category:
+## 🏆 Chosen Vertical
 
 **Physical Event Experience**
+
+ArenaSync AI improves the physical event experience for attendees at large-scale sporting venues through AI-powered navigation, crowd intelligence, and queue optimization.
 
 ---
 
